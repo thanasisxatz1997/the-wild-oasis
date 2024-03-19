@@ -8,24 +8,24 @@ import styled, { css } from "styled-components";
 //css keyword is used in front of a template literal
 const Heading = styled.h1`
   ${(props) =>
-    props.type === "h1" &&
+    props.as === "h1" &&
     css`
-      font-size: ${10 > 5 ? "30px" : "5px"};
+      font-size: 3rem;
       font-weigh: 600px;
     `}
 
   ${(props) =>
-    props.type === "h2" &&
+    props.as === "h2" &&
     css`
-      font-size: ${10 > 5 ? "30px" : "5px"};
+      font-size: 2rem;
       font-weigh: 600px;
     `}
 
     ${(props) =>
-    props.type === "h3" &&
+    props.as === "h3" &&
     css`
-      font-size: ${10 > 5 ? "30px" : "5px"};
-      font-weigh: 600px;
+      font-size: 2rem;
+      font-weigh: 500px;
     `}
 
   line-height:1.4;
